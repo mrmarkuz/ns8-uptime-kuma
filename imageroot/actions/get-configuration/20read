@@ -24,3 +24,8 @@ config["lets_encrypt"] = os.getenv("TRAEFIK_LETS_ENCRYPT") == "True"
 
 # Dump the configuration to stdout
 # json.dump(config, fp=sys.stdout)
+if os.path.exists("uptime-kuma.env"): 
+	data = agent.read_envfile("uptime-kuma.env") 
+else: 
+ 
+json.dump(config, fp=sys.stdout)
