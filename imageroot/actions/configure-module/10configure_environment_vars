@@ -16,6 +16,6 @@ data = json.load(sys.stdin)
 #This is specific to you module, so you need to change it accordingly.
 #agent.dump_env()
  
-uptime-kuma = { 
-} 
-agent.write_envfile("uptime-kuma.env", uptime-kuma) 
+#uptime-kuma = { 
+#} 
+#agent.write_envfile("uptime-kuma.env", uptime-kuma) 
