@@ -43,7 +43,7 @@ buildah config --entrypoint=/ \
     --label="org.nethserver.authorizations=traefik@node:routeadm" \
     --label="org.nethserver.tcp-ports-demand=1" \
     --label="org.nethserver.rootfull=0" \
-    --label="org.nethserver.images=docker.io/louislam/uptime-kuma:1.23.16" \
+    --label="org.nethserver.images=docker.io/louislam/uptime-kuma:1.23.17" \
     "${container}"
 # Commit the image
 buildah commit "${container}" "${repobase}/${reponame}"
