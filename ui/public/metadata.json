@@ -1,19 +1,19 @@
 {
-  "name": "uptime-kuma",
+  "name": "Uptime Kuma",
   "description": {
-    "en": "My uptime-kuma module"
+    "en": "Uptime Kuma is an open-source, free and easy-to-use self-hosted monitoring tool."
   },
-  "categories": [],
+  "categories": ["monitoring"],
   "authors": [
     {
-      "name": "Name Surname",
-      "email": "author@yourmail.org"
+      "name": "Markus Neuberger",
+      "email": "dev@markusneuberger.at"
     }
   ],
   "docs": {
-    "documentation_url": "https://docs.uptime-kuma.com/",
-    "bug_url": "https://github.com/NethServer/dev",
-    "code_url": "https://github.com/author/ns8-uptime-kuma"
+    "documentation_url": "https://uptimekuma.org/wiki",
+    "bug_url": "https://community.nethserver.org",
+    "code_url": "https://github.com/mrmarkuz/ns8-uptime-kuma"
   },
-  "source": "ghcr.io/nethserver/uptime-kuma"
+  "source": "ghcr.io/mrmarkuz/uptime-kuma"
 }
