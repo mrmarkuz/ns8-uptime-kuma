@@ -21,7 +21,7 @@ ExecStartPre=-runagent discover-smarthost
 ExecStart=/usr/bin/podman run --conmon-pidfile %t/uptime-kuma-app.pid --cidfile %t/uptime-kuma-app.ctr-id \
    --cgroups=no-conmon --pod-id-file %t/uptime-kuma.pod-id --replace -d --name uptime-kuma-app \
    --volume uptime-kuma-data:/app/data:z \
-   --env uptime-kuma.env \
+   --env-file uptime-kuma.env \
    --cap-add=NET_RAW \
    ${UPTIME_KUMA_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/uptime-kuma-app.ctr-id -t 10
