@@ -13,7 +13,7 @@ Or on CLI:
 ## Configure
 
 In the app settings at least the FQDN needs to be set.
-Browse to the FQDN and create a user.
+Browse to the FQDN, choose "Embedded MariaDB" for production or "SQLite" for small environments and create a user at the next step.
 
 ## Uninstall
 
