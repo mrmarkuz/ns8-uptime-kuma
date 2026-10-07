@@ -14,4 +14,7 @@ exec 1>&2
 
 touch uptime-kuma.env
 
+# Uptime Kuma reads SMTP settings from its own UI, not from the cluster smarthost
+rm -f smarthost.env
+
 systemctl --user try-restart uptime-kuma.service
