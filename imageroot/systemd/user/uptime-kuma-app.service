@@ -23,6 +23,7 @@ ExecStart=/usr/bin/podman run --conmon-pidfile %t/uptime-kuma-app.pid --cidfile 
    --cap-add=NET_RAW \
    ${UPTIME_KUMA_IMAGE}
 ExecStop=/usr/bin/podman stop --ignore --cidfile %t/uptime-kuma-app.ctr-id -t 10
+ExecReload=/usr/bin/podman kill -s HUP uptime-kuma-app
 SyslogIdentifier=%u
 ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/uptime-kuma-app.ctr-id
 PIDFile=%t/uptime-kuma-app.pid
